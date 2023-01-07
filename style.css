@@ -1,0 +1,25 @@
+body {
+    background-color: grey;
+}
+
+#counter {
+    font-size: 2cm;
+    font-weight: 500;
+}
+
+#content {
+    margin: auto;
+    background-color: rgb(18, 184, 129);
+    width: 10cm;
+    height: 6cm;
+    text-align: center;
+    border-style: groove;
+    border-color: black;
+    border-radius: 8px;    
+}
+
+.btn {
+    font-size: 20px;
+    margin-left: 10px;
+    border-color: black;
+}
