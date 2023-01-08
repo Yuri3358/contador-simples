@@ -6,7 +6,7 @@ const counterComponent = {
     <button class="btn btn-danger" @click="reset">Zerar</button>`,
     data() {
         return {
-            count: 0
+            count: localStorage.getItem("counter") || 0
         }
     },
     methods: {
@@ -15,6 +15,7 @@ const counterComponent = {
                 document.getElementById("counter").style.color = "black"
             }
             this.count++
+            Number(localStorage.setItem("counter", this.count))
         },
 
         decrement(){
@@ -22,6 +23,7 @@ const counterComponent = {
                 document.getElementById("counter").style.color = "red"
             }
             this.count--
+            Number(localStorage.setItem("counter", this.count))
         },
 
         reset(){
