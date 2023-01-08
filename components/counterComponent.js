@@ -2,7 +2,7 @@ const counterComponent = {
     template: 
     `<p id="counter">{{ count }}</p>
     <button class="btn btn-primary" @click="increment">Acrescentar</button>
-    <button class="btn btn-secondary" @click="increment">Diminuir</button>`,
+    <button class="btn btn-secondary" @click="decrement">Diminuir</button>`,
     data() {
         return {
             count: 0
