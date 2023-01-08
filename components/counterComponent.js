@@ -28,6 +28,7 @@ const counterComponent = {
 
         reset(){
             this.count = 0
+            Number(localStorage.setItem("counter", this.count))
         }
     }
 }
