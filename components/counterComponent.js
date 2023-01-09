@@ -15,7 +15,7 @@ const counterComponent = {
                 document.getElementById("counter").style.color = "black"
             }
             this.count++
-            Number(localStorage.setItem("counter", this.count))
+            localStorage.setItem("counter", this.count)
         },
 
         decrement(){
@@ -23,12 +23,12 @@ const counterComponent = {
                 document.getElementById("counter").style.color = "red"
             }
             this.count--
-            Number(localStorage.setItem("counter", this.count))
+            localStorage.setItem("counter", this.count)
         },
 
         reset(){
             this.count = 0
-            Number(localStorage.setItem("counter", this.count))
+            localStorage.setItem("counter", this.count)
         }
     }
 }
